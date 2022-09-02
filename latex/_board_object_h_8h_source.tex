@@ -1,0 +1,56 @@
+\hypertarget{_board_object_h_8h_source}{}\doxysection{Board\+Object\+H.\+h}
+\mbox{\hyperlink{_board_object_h_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef H\_BOARD\_OBJECT}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00002}00002 \textcolor{preprocessor}{\#define H\_BOARD\_OBJECT}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00003}\mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8aa44b734476c2f3d073ee7aca08660a0e}{00003}} \textcolor{keyword}{enum} \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8}{ObjectColours}} \{ \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8af77fb67151d0c18d397069ad8c271ba3}{BLACK}}, \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8ae735a848bf82163a19236ead1c3ef2d2}{YELLOW}}, \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8a35d6719cb4d7577c031b3d79057a1b79}{BLUE}}, \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8af80f9a890089d211842d59625e561f88}{RED}}, \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8a59810d2438e63be8bce699880cb6dfad}{INVISIBLE}}, \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8aa44b734476c2f3d073ee7aca08660a0e}{BACKGROUND}} \};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00004}\mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94af7cf45353ebd3e02f45509cbeafba84c}{00004}} \textcolor{keyword}{enum} \mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94}{ObjectTypes}} \{ \mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94a8516fa97bedb0618ca5c3ab5e30b933e}{THE\_BACKGROUND}}, \mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94af7cf45353ebd3e02f45509cbeafba84c}{A\_COOKIE}}, \mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94a0c27f4b23b3c98ce0685b281a367c2f3}{A\_PLAYER}}, \mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94ae6c4f7d973cc4183114c6961f848d30f}{A\_WALL}} \};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00007}\mbox{\hyperlink{class_board_object}{00007}} \textcolor{keyword}{class }\mbox{\hyperlink{class_board_object}{BoardObject}}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00017}00017 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00018}00018     \textcolor{keywordtype}{int} x, y;}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00019}00019     \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8}{ObjectColours}} currentColor;}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00020}00020 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00021}\mbox{\hyperlink{class_board_object_a94d093bb880e76422aff0638ff000035}{00021}}     \mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94}{ObjectTypes}} \mbox{\hyperlink{class_board_object_a94d093bb880e76422aff0638ff000035}{myClass}};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00022}00022     \textcolor{comment}{//int unique\_ID;}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00023}00023     \textcolor{comment}{//static int count;}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00024}00024 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00025}\mbox{\hyperlink{class_board_object_ae3787f9dd246d1b4e04e459ad51e598c}{00025}}     \mbox{\hyperlink{class_board_object_ae3787f9dd246d1b4e04e459ad51e598c}{BoardObject}}(\textcolor{keywordtype}{int} start\_x, \textcolor{keywordtype}{int} start\_y)}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00026}00026     \{}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00027}00027         x = start\_x; y = start\_y;}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00028}00028         currentColor = \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8aa44b734476c2f3d073ee7aca08660a0e}{BACKGROUND}};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00029}00029         \mbox{\hyperlink{class_board_object_a94d093bb880e76422aff0638ff000035}{myClass}} = \mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94a8516fa97bedb0618ca5c3ab5e30b933e}{THE\_BACKGROUND}};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00031}00031         \textcolor{comment}{//unique\_ID=count++;}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00032}00032     \};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00034}00034     \textcolor{comment}{//int get\_ID() \{ return unique\_ID;\};}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00036}\mbox{\hyperlink{class_board_object_add4300aa8ad3dbe4f1efc292a5ec1fc1}{00036}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_board_object_add4300aa8ad3dbe4f1efc292a5ec1fc1}{get\_x}}() \{ \textcolor{keywordflow}{return} x; \};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00037}\mbox{\hyperlink{class_board_object_aca38e848cb993ff1d979dec3ff0d8e7d}{00037}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_board_object_aca38e848cb993ff1d979dec3ff0d8e7d}{get\_y}}() \{ \textcolor{keywordflow}{return} y; \};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00038}\mbox{\hyperlink{class_board_object_a909774486597d4ce7c55695e1e1c2244}{00038}}     \mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94}{ObjectTypes}} \mbox{\hyperlink{class_board_object_a909774486597d4ce7c55695e1e1c2244}{get\_Type}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_board_object_a94d093bb880e76422aff0638ff000035}{myClass}}; \}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00041}\mbox{\hyperlink{class_board_object_ad51b40b27fbb3bfb07ffa1ee1fd80769}{00041}}     \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8}{ObjectColours}} \mbox{\hyperlink{class_board_object_ad51b40b27fbb3bfb07ffa1ee1fd80769}{get\_Color}}() \{ \textcolor{keywordflow}{return} currentColor; \}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00043}\mbox{\hyperlink{class_board_object_a29e18ef0b024ed21dff561b8ee0df919}{00043}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_object_a29e18ef0b024ed21dff561b8ee0df919}{touch}}() \{ currentColor = \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8aa44b734476c2f3d073ee7aca08660a0e}{BACKGROUND}}; \}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00045}00045 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00047}\mbox{\hyperlink{class_board_object_a39f0202cca7f28f360b54e93a0a18ad1}{00047}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_object_a39f0202cca7f28f360b54e93a0a18ad1}{set\_color}}(\mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8}{ObjectColours}} new\_color)}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00048}00048     \{}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00049}00049         currentColor = new\_color;}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00050}00050     \};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00051}\mbox{\hyperlink{class_board_object_a3c511af95bba5fd5a08e2c4195b2adb3}{00051}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_object_a3c511af95bba5fd5a08e2c4195b2adb3}{set\_x}}(\textcolor{keywordtype}{int} new\_x) \{ x = new\_x; \};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00052}\mbox{\hyperlink{class_board_object_a4c330ad1094250666125ed0908a1d1a0}{00052}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_object_a4c330ad1094250666125ed0908a1d1a0}{set\_y}}(\textcolor{keywordtype}{int} new\_y) \{ y = new\_y; \};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00055}00055 \};}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00057}00057 \textcolor{comment}{//int BoardObject::count=0;}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00058}00058 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// H\_BOARD\_OBJECT}}
+\DoxyCodeLine{\Hypertarget{_board_object_h_8h_source_l00059}00059 }
+
+\end{DoxyCode}

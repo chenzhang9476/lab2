@@ -1,0 +1,29 @@
+\hypertarget{_cookie_8cpp_source}{}\doxysection{Cookie.\+cpp}
+\mbox{\hyperlink{_cookie_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_board_object_h_8h}{BoardObjectH.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_cookie_h_8h}{CookieH.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00004}\mbox{\hyperlink{_cookie_8cpp_a21d1728c8b7c856fe97e4bd216299799}{00004}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_cookie_8cpp_a21d1728c8b7c856fe97e4bd216299799}{PrizeValues}}[] = \{ 10,20,30,40 \};}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00006}\mbox{\hyperlink{class_cookie_a22048f68c6613b5d95c81ddc518779f7}{00006}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cookie_a22048f68c6613b5d95c81ddc518779f7}{Cookie::touch}}()}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00008}00008     \textcolor{keywordflow}{switch} (status)}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00009}00009     \{}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00010}00010     \textcolor{keywordflow}{case} \mbox{\hyperlink{_cookie_h_8h_aaee4bc9ad00e24792682e7cfe6d34cf5abb22a6fcb7f208995b092f12d388786c}{VISIBLE}}: \textcolor{keywordflow}{if} (color1 == \mbox{\hyperlink{class_board_object_ad51b40b27fbb3bfb07ffa1ee1fd80769}{get\_Color}}())}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00011}00011         \mbox{\hyperlink{class_board_object_a39f0202cca7f28f360b54e93a0a18ad1}{set\_color}}(color2);}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00012}00012                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00013}00013         \mbox{\hyperlink{class_board_object_a39f0202cca7f28f360b54e93a0a18ad1}{set\_color}}(color1);}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00014}00014         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00015}00015     \textcolor{keywordflow}{case}  \mbox{\hyperlink{_cookie_h_8h_aaee4bc9ad00e24792682e7cfe6d34cf5a1fa858512b62c91acb5ef93d4ea966d1}{EATEN}}:}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00016}00016     \textcolor{keywordflow}{case}  \mbox{\hyperlink{_cookie_h_8h_aaee4bc9ad00e24792682e7cfe6d34cf5ad64c9726f24e01be64f489fe57967d56}{EXPIRED}}:}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00017}00017         \mbox{\hyperlink{class_board_object_a39f0202cca7f28f360b54e93a0a18ad1}{set\_color}}(\mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8aa44b734476c2f3d073ee7aca08660a0e}{BACKGROUND}});}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00018}00018     \}}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00021}\mbox{\hyperlink{class_cookie_ae0ec773320b4272d8189e5db71bcec3f}{00021}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cookie_ae0ec773320b4272d8189e5db71bcec3f}{Cookie::get\_value}}()}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00022}00022 \{}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00023}00023     \textcolor{keywordflow}{return} \mbox{\hyperlink{_cookie_8cpp_a21d1728c8b7c856fe97e4bd216299799}{PrizeValues}}[valueIndex];}
+\DoxyCodeLine{\Hypertarget{_cookie_8cpp_source_l00024}00024 \}}
+
+\end{DoxyCode}

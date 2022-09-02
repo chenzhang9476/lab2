@@ -10,6 +10,12 @@ typedef BoardObject* p_BoardObject;
 
 class VectorBoardObjects
 {
+	/**
+
+	   @brief this is VectorBoardObjects class
+	   @var list: vector
+	   @var internalIterator: iterator variable
+   */
 	std::vector <p_BoardObject> list;
 	std::vector <p_BoardObject>::iterator internalIterator;
 public:

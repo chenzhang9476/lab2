@@ -1,0 +1,15 @@
+digraph "BoardObject::set_color"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="BoardObject::set_color",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="Cookie::touch",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_cookie.html#a22048f68c6613b5d95c81ddc518779f7",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="Player::touch",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_player.html#a571696d9065669580ad7b37fdaa119c2",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="Wall::touch",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_wall.html#a3fb9924fa0fe1f6545b6ad17595065fa",tooltip=" "];
+}

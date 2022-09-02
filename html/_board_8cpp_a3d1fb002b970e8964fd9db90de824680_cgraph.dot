@@ -1,0 +1,15 @@
+digraph "game_all"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="game_all",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="VectorBoardObjects\l::fitrstObject",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vector_board_objects.html#a90832b05679f501a9444d9e5c6338b5f",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="BoardObject::get_Color",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_board_object.html#ad51b40b27fbb3bfb07ffa1ee1fd80769",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="VectorBoardObjects\l::nextObject",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vector_board_objects.html#a671b29156e54830f32deee27015b0921",tooltip=" "];
+}

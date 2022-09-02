@@ -1,0 +1,15 @@
+digraph "Board::move"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="Board::move",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="VectorBoardObjects\l::addOne",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vector_board_objects.html#a3ccfcfeae8301dc08fd4db310e8b31ff",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="VectorBoardObjects\l::cookieValue",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vector_board_objects.html#a67e45493ac9a70864a3d67ca207a81eb",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="VectorBoardObjects\l::elimiantePlayer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vector_board_objects.html#a4a77cd48a825055cd548e021fe231436",tooltip=" "];
+}

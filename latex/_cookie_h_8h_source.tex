@@ -1,0 +1,38 @@
+\hypertarget{_cookie_h_8h_source}{}\doxysection{Cookie\+H.\+h}
+\mbox{\hyperlink{_cookie_h_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef H\_COOKIE}}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00003}\mbox{\hyperlink{_cookie_h_8h_a82e2a7601f92b8e0ccc6740f19dc4b7b}{00003}} \textcolor{preprocessor}{\#define H\_COOKIE}}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00004}\mbox{\hyperlink{_cookie_h_8h_aaee4bc9ad00e24792682e7cfe6d34cf5}{00004}} \textcolor{keyword}{enum} \mbox{\hyperlink{_cookie_h_8h_aaee4bc9ad00e24792682e7cfe6d34cf5}{CookieState}} \{ \mbox{\hyperlink{_cookie_h_8h_aaee4bc9ad00e24792682e7cfe6d34cf5abb22a6fcb7f208995b092f12d388786c}{VISIBLE}}, \mbox{\hyperlink{_cookie_h_8h_aaee4bc9ad00e24792682e7cfe6d34cf5a1fa858512b62c91acb5ef93d4ea966d1}{EATEN}}, \mbox{\hyperlink{_cookie_h_8h_aaee4bc9ad00e24792682e7cfe6d34cf5ad64c9726f24e01be64f489fe57967d56}{EXPIRED}} \};}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00006}\mbox{\hyperlink{_cookie_h_8h_acfb255dba7bada81de07d30aa19e03f8adeee0554b2ec74cbea99ec48afc9988a}{00006}} \textcolor{keyword}{enum} \mbox{\hyperlink{_cookie_h_8h_acfb255dba7bada81de07d30aa19e03f8}{PrizeValueIndex}} \{ \mbox{\hyperlink{_cookie_h_8h_acfb255dba7bada81de07d30aa19e03f8adeee0554b2ec74cbea99ec48afc9988a}{CHEAP}}, \mbox{\hyperlink{_cookie_h_8h_acfb255dba7bada81de07d30aa19e03f8a5340ec7ecef6cc3886684a3bd3450d64}{MEDIUM}}, \mbox{\hyperlink{_cookie_h_8h_acfb255dba7bada81de07d30aa19e03f8a6734923742d70eab78131d457a5be6e2}{USEFUL}}, \mbox{\hyperlink{_cookie_h_8h_acfb255dba7bada81de07d30aa19e03f8a964b46b95670763c9f367881526fb7e2}{DEAR}} \};}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00009}00009 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_board_object_h_8h}{BoardObjectH.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00011}\mbox{\hyperlink{class_cookie}{00011}} \textcolor{keyword}{class }\mbox{\hyperlink{class_cookie}{Cookie}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_board_object}{BoardObject}}}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00012}00012 \{}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00021}00021 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00022}00022     \mbox{\hyperlink{_cookie_h_8h_aaee4bc9ad00e24792682e7cfe6d34cf5}{CookieState}} status;}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00023}00023     \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8}{ObjectColours}} color1;}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00024}00024     \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8}{ObjectColours}}  color2;}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00025}00025     \mbox{\hyperlink{_cookie_h_8h_acfb255dba7bada81de07d30aa19e03f8}{PrizeValueIndex}} valueIndex;}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00027}00027 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00028}\mbox{\hyperlink{class_cookie_a51c4a19c1cff16421279092117d721bd}{00028}}     \mbox{\hyperlink{class_cookie_a51c4a19c1cff16421279092117d721bd}{Cookie}}(\textcolor{keywordtype}{int} start\_x, \textcolor{keywordtype}{int} start\_y) :\mbox{\hyperlink{class_board_object}{BoardObject}}(start\_x, start\_y)}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00029}00029     \{}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00030}00030         status = \mbox{\hyperlink{_cookie_h_8h_aaee4bc9ad00e24792682e7cfe6d34cf5abb22a6fcb7f208995b092f12d388786c}{VISIBLE}};}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00031}00031         color1 = \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8ae735a848bf82163a19236ead1c3ef2d2}{YELLOW}};}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00032}00032         color2 = \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8a35d6719cb4d7577c031b3d79057a1b79}{BLUE}};}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00033}00033         valueIndex = \mbox{\hyperlink{_cookie_h_8h_acfb255dba7bada81de07d30aa19e03f8adeee0554b2ec74cbea99ec48afc9988a}{CHEAP}};}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00034}00034         \mbox{\hyperlink{class_board_object_a94d093bb880e76422aff0638ff000035}{myClass}} = \mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94af7cf45353ebd3e02f45509cbeafba84c}{A\_COOKIE}};}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00035}00035     \};}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00037}00037     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cookie_ae0ec773320b4272d8189e5db71bcec3f}{get\_value}}();}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00039}00039     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cookie_a22048f68c6613b5d95c81ddc518779f7}{touch}}();}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00040}00040 \};}
+\DoxyCodeLine{\Hypertarget{_cookie_h_8h_source_l00041}00041 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

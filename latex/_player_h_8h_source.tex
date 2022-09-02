@@ -1,0 +1,32 @@
+\hypertarget{_player_h_8h_source}{}\doxysection{Player\+H.\+h}
+\mbox{\hyperlink{_player_h_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef H\_PLAYER}}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00002}00002 \textcolor{preprocessor}{\#define H\_PLAYER}}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00003}00003 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00005}\mbox{\hyperlink{_player_h_8h_a3c730f37b1b3a893159bada67637fdb1a4f34c5c191d6e0d028ca831b6c0b1571}{00005}} \textcolor{keyword}{enum} \mbox{\hyperlink{_player_h_8h_a3c730f37b1b3a893159bada67637fdb1}{PlayerState}} \{ \mbox{\hyperlink{_player_h_8h_a3c730f37b1b3a893159bada67637fdb1a4f34c5c191d6e0d028ca831b6c0b1571}{ALIVE}}, \mbox{\hyperlink{_player_h_8h_a3c730f37b1b3a893159bada67637fdb1a11fd9ca455f92c69c084484d5cd803c2}{DEAD}} \};}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00007}00007 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_board_object_h_8h}{BoardObjectH.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00009}\mbox{\hyperlink{class_player}{00009}} \textcolor{keyword}{class }\mbox{\hyperlink{class_player}{Player}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_board_object}{BoardObject}}}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00010}00010 \{}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00018}00018 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00019}00019     \mbox{\hyperlink{_player_h_8h_a3c730f37b1b3a893159bada67637fdb1}{PlayerState}} status;}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00020}00020     \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8}{ObjectColours}} color1;}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00021}00021     \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8}{ObjectColours}}  color2;}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00023}00023 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00024}\mbox{\hyperlink{class_player_a5f008d8ca05b475787cb6f78b6a9a8c2}{00024}}     \mbox{\hyperlink{class_player_a5f008d8ca05b475787cb6f78b6a9a8c2}{Player}}(\textcolor{keywordtype}{int} start\_x, \textcolor{keywordtype}{int} start\_y) :\mbox{\hyperlink{class_board_object}{BoardObject}}(start\_x, start\_y)}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00025}00025     \{}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00026}00026         status = \mbox{\hyperlink{_player_h_8h_a3c730f37b1b3a893159bada67637fdb1a4f34c5c191d6e0d028ca831b6c0b1571}{ALIVE}};}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00027}00027         color1 = \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8af80f9a890089d211842d59625e561f88}{RED}};}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00028}00028         color2 = \mbox{\hyperlink{_board_object_h_8h_ab03324df8a9829a2ce65d0c5b4cc64f8a35d6719cb4d7577c031b3d79057a1b79}{BLUE}};}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00029}00029         \mbox{\hyperlink{class_board_object_a94d093bb880e76422aff0638ff000035}{myClass}} = \mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94a0c27f4b23b3c98ce0685b281a367c2f3}{A\_PLAYER}};}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00030}00030     \};}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00032}00032     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_a571696d9065669580ad7b37fdaa119c2}{touch}}();}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00033}00033 \};}
+\DoxyCodeLine{\Hypertarget{_player_h_8h_source_l00034}00034 \textcolor{preprocessor}{\#endif\#pragma once}}
+
+\end{DoxyCode}

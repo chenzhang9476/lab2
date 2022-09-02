@@ -8,7 +8,13 @@ enum PlayerState { ALIVE, DEAD };
 
 class Player : public BoardObject
 {
+	/**
 
+	   @brief this is player class
+	   @var status: player State
+	   @var color1: color one
+	   @var color2: color two
+   */
 private:
 	PlayerState status;
 	ObjectColours color1;

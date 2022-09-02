@@ -6,7 +6,14 @@ enum ObjectTypes { THE_BACKGROUND, A_COOKIE, A_PLAYER, A_WALL };
 
 class BoardObject
 {
+    /**
 
+        @brief this is Board class
+        @var x: x
+        @var y: y
+        @var currentColor:ObjectColours
+        @var myClass:ObjectTypes
+    */
 private:
     int x, y;
     ObjectColours currentColor;

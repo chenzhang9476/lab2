@@ -1,0 +1,121 @@
+\hypertarget{_vector_board_objects_8cpp_source}{}\doxysection{Vector\+Board\+Objects.\+cpp}
+\mbox{\hyperlink{_vector_board_objects_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_vector_board_objects_8h}{VectorBoardObjects.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_board_object_h_8h}{BoardObjectH.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00004}00004 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00010}\mbox{\hyperlink{class_vector_board_objects_ab8323db981daa247622bbc7bfbbb8b84}{00010}} \mbox{\hyperlink{class_vector_board_objects_ab8323db981daa247622bbc7bfbbb8b84}{VectorBoardObjects::VectorBoardObjects}}(\mbox{\hyperlink{class_board_object}{p\_BoardObject}} newOne) :list()}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00011}00011 \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00012}00012     std::vector <p\_BoardObject>::iterator it;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00013}00013     it = list.begin();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00014}00014     list.insert(it, newOne);}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00017}\mbox{\hyperlink{class_vector_board_objects_a90832b05679f501a9444d9e5c6338b5f}{00017}} \mbox{\hyperlink{class_board_object}{p\_BoardObject}} \mbox{\hyperlink{class_vector_board_objects_a90832b05679f501a9444d9e5c6338b5f}{VectorBoardObjects::fitrstObject}}()}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00018}00018 \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00019}00019     \textcolor{keywordflow}{if} (0 < list.size())}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00020}00020     \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00021}00021         internalIterator = list.begin();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00022}00022         \textcolor{keywordflow}{return} (*internalIterator);}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00023}00023     \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00024}00024     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00025}00025         \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00026}00026 \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00029}\mbox{\hyperlink{class_vector_board_objects_a3ccfcfeae8301dc08fd4db310e8b31ff}{00029}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_vector_board_objects_a3ccfcfeae8301dc08fd4db310e8b31ff}{VectorBoardObjects::addOne}}(\mbox{\hyperlink{class_board_object}{p\_BoardObject}} newOne)}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00030}00030 \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00031}00031     std::vector <p\_BoardObject>::iterator it;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00032}00032     it = list.begin();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00033}00033     list.insert(it, newOne);}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00034}00034 \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00036}\mbox{\hyperlink{class_vector_board_objects_a671b29156e54830f32deee27015b0921}{00036}} \mbox{\hyperlink{class_board_object}{p\_BoardObject}} \mbox{\hyperlink{class_vector_board_objects_a671b29156e54830f32deee27015b0921}{VectorBoardObjects::nextObject}}()}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00037}00037 \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00038}00038     internalIterator++;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00039}00039     \textcolor{keywordflow}{if} (internalIterator < list.end())}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00040}00040     \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00041}00041         \textcolor{keywordflow}{return} (*internalIterator);}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00042}00042     \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00043}00043     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00044}00044         \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00045}00045 \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00047}\mbox{\hyperlink{class_vector_board_objects_a4a77cd48a825055cd548e021fe231436}{00047}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_vector_board_objects_a4a77cd48a825055cd548e021fe231436}{VectorBoardObjects::elimiantePlayer}}()}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00048}00048 \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00049}00049     std::vector <p\_BoardObject>::iterator it;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00050}00050     it = list.begin();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00051}00051     \textcolor{keywordflow}{while} (it < list.end())}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00052}00052     \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00053}00053         \textcolor{keywordflow}{if} (\mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94a0c27f4b23b3c98ce0685b281a367c2f3}{A\_PLAYER}} == (*it)-\/>get\_Type())}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00054}00054         \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00055}00055             list.erase(it); \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00056}00056         \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00057}00057         it++;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00058}00058     \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00060}00060     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00061}00061 \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00064}\mbox{\hyperlink{class_vector_board_objects_a7fcf7bac6e8743ba685b55460c46ac6a}{00064}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_vector_board_objects_a7fcf7bac6e8743ba685b55460c46ac6a}{VectorBoardObjects::isThereAWall}}()}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00065}00065 \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00066}00066     std::vector <p\_BoardObject>::iterator it;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00067}00067     it = list.begin();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00068}00068     \textcolor{keywordflow}{while} (it < list.end())}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00069}00069     \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00070}00070         \textcolor{keywordflow}{if} (\mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94ae6c4f7d973cc4183114c6961f848d30f}{A\_WALL}} == (*it)-\/>get\_Type())}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00071}00071         \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00072}00072             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00073}00073         \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00074}00074         it++;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00075}00075     \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00077}00077     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00078}00078 \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00081}\mbox{\hyperlink{class_vector_board_objects_a67e45493ac9a70864a3d67ca207a81eb}{00081}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_vector_board_objects_a67e45493ac9a70864a3d67ca207a81eb}{VectorBoardObjects::cookieValue}}()}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00082}00082 \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00083}00083     \textcolor{keywordtype}{int} temp = 0;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00084}00084     std::vector <p\_BoardObject>::iterator it;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00085}00085     it = list.begin();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00086}00086     \textcolor{keywordflow}{while} (it < list.end())}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00087}00087     \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00088}00088         \textcolor{keywordflow}{if} (\mbox{\hyperlink{_board_object_h_8h_aeb594bb7008341c7b10ecf8e8ef84f94af7cf45353ebd3e02f45509cbeafba84c}{A\_COOKIE}} == (*it)-\/>get\_Type())}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00089}00089         \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00090}00090             temp = ((\mbox{\hyperlink{class_cookie}{Cookie}}*)(*it))-\/>get\_value();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00091}00091             list.erase(it);}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00092}00092             \textcolor{keywordflow}{return} temp;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00093}00093         \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00094}00094         it++;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00095}00095     \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00097}00097     \textcolor{keywordflow}{return} temp;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00098}00098 \}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00099}00099 \textcolor{comment}{//void main() \{}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00100}00100     \textcolor{comment}{// Classify a variable}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00101}00101     \textcolor{comment}{//p\_BoardObject init\_object = new BoardObject(1,1);}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00102}00102     \textcolor{comment}{//Constructor}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00103}00103     \textcolor{comment}{//VectorBoardObjects vectorobject(init\_object);}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00104}00104     \textcolor{comment}{//fitrstObject}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00105}00105     \textcolor{comment}{//p\_BoardObject first = vectorobject.fitrstObject();}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00106}00106     \textcolor{comment}{//cout << "{}The first object memory address is : "{} << first << endl;}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00107}00107     \textcolor{comment}{//Get size }}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00108}00108     \textcolor{comment}{//int next = vectorobject.isThereAWall();}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00109}00109     \textcolor{comment}{//cout << "{}The wall value is : "{} << next << endl;}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00110}00110     \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00111}00111     \textcolor{comment}{//for (int i = 0; i < 5; i++) \{}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00112}00112         \textcolor{comment}{//add One}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00113}00113         \textcolor{comment}{//vectorobject.addOne(new BoardObject(1, 1));}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00114}00114     \textcolor{comment}{//\}}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00115}00115     \textcolor{comment}{//for (int i = 0; i < 5; i++) \{}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00116}00116     \textcolor{comment}{//next object}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00117}00117         \textcolor{comment}{//p\_BoardObject next = vectorobject.nextObject();}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00118}00118         \textcolor{comment}{//cout << "{}The next object memory address is : "{} << next << endl;}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00119}00119     \textcolor{comment}{//\}}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00120}00120     }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8cpp_source_l00121}00121 \textcolor{comment}{//\}}}
+
+\end{DoxyCode}

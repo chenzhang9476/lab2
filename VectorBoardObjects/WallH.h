@@ -5,7 +5,11 @@ enum WallState { SOLID };
 
 class Wall : public BoardObject
 {
+	/**
 
+	   @brief this is wall class
+	   @var color1: color one
+   */
 private:
 	ObjectColours color1;
 

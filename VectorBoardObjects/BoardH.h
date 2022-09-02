@@ -8,19 +8,20 @@
 #include  "WallH.h"
 #include  "CookieH.h"
 
+//@date 2/9/2022
 typedef  VectorBoardObjects* p_ListBoardObjects;
 
 /**
 
 	@brief this is Board class
-	@param the_rows: total rows
-	@param the_cols: total columns
-	@param lives: total lives
-	@param mySpace:the space
-	@param player_id_x : player x axis
-	@param player_id_y : player y axis
-	@param startPlayer: a point toward start player
-	@param currentScore: the current score
+	@var the_rows: total rows
+	@var the_cols: total columns
+	@var lives: total lives
+	@var mySpace:the space
+	@var player_id_x : player x axis
+	@var player_id_y : player y axis
+	@var startPlayer: a point toward start player
+	@var currentScore: the current score
 */
 class Board
 {
@@ -40,7 +41,8 @@ private:
 
 
 public:
-
+	//@param rows : rows
+	//@param cols: columns
 	Board(int rows, int cols)
 	{
 		if ((ROWS >= rows) && (COLUMNS >= cols))
@@ -81,13 +83,15 @@ public:
 			setOK = false;
 
 	};
-
+	//@return : a bool value to show the setting is done
 	bool setBoardOK() { return setOK; };
 
 	void paint();
-
+	
+	
 	void move(char command);
 
+	//@return : if the player is still alive
 	bool IamAlive() {
 		if (0 < lives) { lives--; return true; }
 		else return false;

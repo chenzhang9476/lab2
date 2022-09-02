@@ -1,0 +1,29 @@
+\hypertarget{_vector_board_objects_8h_source}{}\doxysection{Vector\+Board\+Objects.\+h}
+\mbox{\hyperlink{_vector_board_objects_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00002}00002 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00003}00003 \textcolor{preprocessor}{\#include  "{}\mbox{\hyperlink{_board_object_h_8h}{BoardObjectH.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00004}00004 \textcolor{preprocessor}{\#include  "{}\mbox{\hyperlink{_player_h_8h}{PlayerH.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00005}00005 \textcolor{preprocessor}{\#include  "{}\mbox{\hyperlink{_cookie_h_8h}{CookieH.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00006}00006 \textcolor{comment}{//\#include  "{}WallH.h"{}}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00007}00007 \textcolor{preprocessor}{\#ifndef H\_LIST\_OF\_OBJECTS}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00008}\mbox{\hyperlink{_vector_board_objects_8h_a053aa415a367be25d46a27e28c275b26}{00008}} \textcolor{preprocessor}{\#define H\_LIST\_OF\_OBJECTS}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00009}\mbox{\hyperlink{_vector_board_objects_8h_ac13f6667cb79a6ba9ae153d5760d48e3}{00009}} \textcolor{keyword}{typedef} \mbox{\hyperlink{class_board_object}{BoardObject}}* \mbox{\hyperlink{_vector_board_objects_8h_ac13f6667cb79a6ba9ae153d5760d48e3}{p\_BoardObject}};}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00011}\mbox{\hyperlink{class_vector_board_objects}{00011}} \textcolor{keyword}{class }\mbox{\hyperlink{class_vector_board_objects}{VectorBoardObjects}}}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00012}00012 \{}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00019}00019     std::vector <p\_BoardObject> list;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00020}00020     std::vector <p\_BoardObject>::iterator internalIterator;}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00021}00021 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00022}00022         \mbox{\hyperlink{class_vector_board_objects}{VectorBoardObjects}}(\mbox{\hyperlink{class_board_object}{p\_BoardObject}} newOne);}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00023}00023         \mbox{\hyperlink{class_board_object}{p\_BoardObject}} \mbox{\hyperlink{class_vector_board_objects_a90832b05679f501a9444d9e5c6338b5f}{fitrstObject}}();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00024}00024         \mbox{\hyperlink{class_board_object}{p\_BoardObject}} \mbox{\hyperlink{class_vector_board_objects_a671b29156e54830f32deee27015b0921}{nextObject}}();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00025}00025         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_vector_board_objects_a3ccfcfeae8301dc08fd4db310e8b31ff}{addOne}}(\mbox{\hyperlink{class_board_object}{p\_BoardObject}} newOne);}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00026}00026         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_vector_board_objects_a4a77cd48a825055cd548e021fe231436}{elimiantePlayer}}();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00027}00027         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_vector_board_objects_a7fcf7bac6e8743ba685b55460c46ac6a}{isThereAWall}}();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00028}00028         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_vector_board_objects_a67e45493ac9a70864a3d67ca207a81eb}{cookieValue}}();}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00029}00029 \};}
+\DoxyCodeLine{\Hypertarget{_vector_board_objects_8h_source_l00030}00030 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

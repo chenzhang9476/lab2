@@ -1,0 +1,64 @@
+\hypertarget{_vlad_pack_man_game_8cpp_source}{}\doxysection{Vlad\+Pack\+Man\+Game.\+cpp}
+\mbox{\hyperlink{_vlad_pack_man_game_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_board_h_8h}{BoardH.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00005}00005 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00007}\mbox{\hyperlink{_vlad_pack_man_game_8cpp_adbca3528ba29d3d93508d9b0e695a6e0}{00007}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_vlad_pack_man_game_8cpp_adbca3528ba29d3d93508d9b0e695a6e0}{banner}}()}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00009}00009     cout << \textcolor{stringliteral}{"{}***************************************************"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00010}00010     cout << \textcolor{stringliteral}{"{}*                                                 *"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00011}00011     cout << \textcolor{stringliteral}{"{}*  Welcome to TEXT-\/BASED PACKMAN          *"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00012}00012     cout << \textcolor{stringliteral}{"{}*                                                 *"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00013}00013     cout << \textcolor{stringliteral}{"{}*  (c) 2010  Vlad Estivill\_Castro         *"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00014}00014     cout << \textcolor{stringliteral}{"{}*                                                 *"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00015}00015     cout << \textcolor{stringliteral}{"{}*   E<cr> -\/ Move up                           *"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00016}00016     cout << \textcolor{stringliteral}{"{}*   X<cr> -\/ Move down                             *"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00017}00017     cout << \textcolor{stringliteral}{"{}*   S<cr> -\/ Move left                             *"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00018}00018     cout << \textcolor{stringliteral}{"{}*   D<cr> -\/ Move right                        *"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00019}00019     cout << \textcolor{stringliteral}{"{}*   P<cr> -\/ Park                                  *"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00020}00020     cout << \textcolor{stringliteral}{"{}*                                                 *"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00021}00021     cout << \textcolor{stringliteral}{"{}***************************************************"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00024}00024 \}}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00026}\mbox{\hyperlink{_vlad_pack_man_game_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00026}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_vlad_pack_man_game_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00028}00028 \{}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00029}00029     \textcolor{keywordtype}{char} aMove;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00030}00030     \mbox{\hyperlink{_vlad_pack_man_game_8cpp_adbca3528ba29d3d93508d9b0e695a6e0}{banner}}();}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00032}00032     \textcolor{comment}{// Initialize}}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00034}00034     \mbox{\hyperlink{class_board}{Board}} theBoard(7, 7);}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00036}00036     \textcolor{comment}{// Set Up}}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00038}00038     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00041}00041         theBoard.\mbox{\hyperlink{class_board_a374a1234d9e64ace51c669ad5d061fa4}{paint}}();}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00043}00043         cin >> aMove;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00045}00045         \textcolor{keywordflow}{if} ((\textcolor{charliteral}{'E'} == aMove) || (\textcolor{charliteral}{'X'} == aMove) || (\textcolor{charliteral}{'S'} == aMove) || (\textcolor{charliteral}{'D'} == aMove))}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00046}00046             aMove = aMove -\/ \textcolor{charliteral}{'A'} + \textcolor{charliteral}{'a'};}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00048}00048         \textcolor{keywordflow}{if} (!(}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00049}00049             (\textcolor{charliteral}{'e'} == aMove) || (\textcolor{charliteral}{'x'} == aMove) || (\textcolor{charliteral}{'s'} == aMove) || (\textcolor{charliteral}{'d'} == aMove)}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00050}00050             )) aMove = \textcolor{charliteral}{'p'};}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00052}00052         theBoard.\mbox{\hyperlink{class_board_a7ed62f55e30d4baaa411bab3b9192b64}{move}}(aMove);}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00054}00054     \} \textcolor{keywordflow}{while} (theBoard.\mbox{\hyperlink{class_board_a1a096f11fed61b57135b98b11a0eb452}{IamAlive}}());}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00057}00057     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00058}00058 \}}
+\DoxyCodeLine{\Hypertarget{_vlad_pack_man_game_8cpp_source_l00059}00059 }
+
+\end{DoxyCode}
